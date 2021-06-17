@@ -22,7 +22,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 const dbURL =
-  "mongodb+srv://prameet:prameet12345@nodemongolearning.qqbuf.mongodb.net/NodeMongoLearning?retryWrites=true&w=majority";
+  "mongodb+srv://prameet:<username>@<password>.qqbuf.mongodb.net/NodeMongoLearning?retryWrites=true&w=majority";
 mongoose
   .connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
